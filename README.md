@@ -4,6 +4,7 @@
 Girltalk is created to be a safe space for girls, ages 11-17 to join as pairs and talk about anything they want without outside influences. With the resurgence of omegle, many exploit the app to use children in unsafe ways.
 
 ## User Stories
+
 - Users will be able to video chat with one person when as soon as they navigate to the website.
 - Users will see speaking points at the side of their video so they see helpful talking points.
 
@@ -32,6 +33,6 @@ Girltalk is created to be a safe space for girls, ages 11-17 to join as pairs an
 
 Users can contribute to this code, identify bugs, and propose improvements
 at: 
-The project's [main repository](https://github.com/nneverson/girltalk)
+The project's [main repository](https://github.com/nneverson/girltalk), the project's [issue tracker](https://github.com/nneverson/girltalk/issues)
 
-The project's [issue tracker](https://github.com/nneverson/girltalk/issues)
+Check out the [Deployed website](http://girltalk-empowered.herokuapp.com/)
