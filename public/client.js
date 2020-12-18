@@ -7,7 +7,8 @@ const remote = document.getElementById('remote-video');
 const getUserMedia =
 	navigator.getUserMedia ||
 	navigator.webkitGetUserMedia ||
-	navigator.mozGetUserMedia;
+	navigator.mozGetUserMedia ||
+	navigator.msGetUserMedia;
 
 let callerId = null;
 let receiverId = null;
