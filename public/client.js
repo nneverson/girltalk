@@ -34,7 +34,7 @@ socket.on('receiver joined', function (data) {
 		getUserMedia(
 			{
 				video: true,
-				audio: false,
+				audio: true,
 			},
 			function (localStream) {
 				local.srcObject = localStream;
