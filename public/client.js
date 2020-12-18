@@ -16,7 +16,7 @@ let isCaller = false;
 peer.on('open', function (id) {
 	callerId = id;
 	socket.emit('hello world', id);
-	idHtmlElement.innerHTML = id;
+	// idHtmlElement.innerHTML = id;
 });
 //if the caller is in a room unpaired, display a message saying 'waiting for second user', set isCaller to true
 
@@ -40,7 +40,7 @@ socket.on('receiver joined', function (data) {
 				local.srcObject = localStream;
 				local.play();
 				const call = peer.call(receiverId, localStream);
-				call.on('steam', function (remoteStream) {
+				call.on('stream', function (remoteStream) {
 					remote.srcObject = remoteStream;
 					remote.play();
 				});
@@ -54,7 +54,7 @@ socket.on('receiver joined', function (data) {
                 getUserMedia(
                     {
                         video: true,
-                        audio: false,
+                        audio: true,
                     },
                     function (localStream) {
                     console.log(call)

@@ -1,0 +1,62 @@
+* {
+	color: white;
+}
+body {
+	background-color: black;
+	display: grid;
+	grid-template-columns: 25%, 25%, 25%, 25%;
+    grid-template-rows: 25%, 25%, 25%, 25%, 25%;
+    column-gap: 10px;
+    margin-bottom: 10px;
+}
+
+h1 {
+	font-size: 75px;
+	font-family: 'Irish Grover', 'cursive';
+	color: hotpink;
+	grid-column: 2/7;
+	/* grid-column-end: 4; */
+}
+#talking-points-1 {
+	grid-column-start: span 1;
+    grid-column-end: 2;
+    grid-row-start:4 ;
+	width: 250px;
+    height: auto;
+	border: gray;
+    border-style: solid;
+
+    
+	/* column-gap: 10px; */
+}
+#talking-points-2 {
+	grid-column-start: span 1;
+    grid-column-end: 5;
+    grid-row-start:4 ;
+    align-self: end;
+	width: 250px;
+    height: auto;
+	border: gray;
+	border-style: solid;
+	/* column-gap: 10px; */
+}
+#message {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+#local-video {
+	grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: span 1;
+    grid-column-end: 4;
+    border-style: dotted;
+}
+#remote-video{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: span 1;
+    grid-column-end: 3;
+    border-style: dotted;
+
+}
+
